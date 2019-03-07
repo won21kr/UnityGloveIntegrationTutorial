@@ -53,11 +53,17 @@ Video Run Through : CodeRunThrough
 <i>When deciding the number of poses and hand shapes to use, the goal is to make sure each sensor has at least one pose where it is at its minimum stretch, and at least one pose where it is at its maximum stretch, and that no two sensors are at the same degree of stretch in all poses. For more advanced calibration, poses with intermediate levels of stretch may be added. The key advantage to this method is the app itself does not require any prior knowledge of the locations of the sensors, and the process will inherently account for differences in the way different people wear the glove.</i>  
 <br>To create your own set of reference poses:
 
-Identify the joints in the avatar you want to control with the StretchSense Demonstration Glove and expand them all in the hierarchy of the model (screenshot of hierarchy)
-Identify the co-ordinate system for each joint, i.e., rotation about what axis causes the finger to move through the desired range of motion (Note: this is avatar specific!)
-Each bone is defined by 9 parameters: Translation X, Y and Z (where in the 3D volume is the center of mass of the bone relative to the workspace origin), Rotational X, Y, and Z (what orientation is the bone relative to the main axes of the workspace), and Scale X, Y and Z (the relative size of the bone in the bone's co-ordinate system. We need to set these 9 parameters for each joint in each reference pose. Note in Unity, the bones in the fingers are setup with a parent-child relationship. This emans for example that rotating a finger at the metacarpalphalangeal joint moves the proximate phalangeal joint  
+<ol>
+<li>Identify the joints in the avatar you want to control with the StretchSense Demonstration Glove and expand them all in the hierarchy of the model (screenshot of hierarchy)</li>
+<li>Identify the co-ordinate system for each joint, i.e., rotation about what axis causes the finger to move through the desired range of motion (Note: this is avatar specific!)</li>
+<ol>  
+<li>Each bone is defined by 9 parameters: Translation X, Y and Z (where in the 3D volume is the center of mass of the bone relative to the workspace origin), Rotational X, Y, and Z (what orientation is the bone relative to the main axes of the workspace), and Scale X, Y and Z (the relative size of the bone in the bone's co-ordinate system. We need to set these 9 parameters for each joint in each reference pose. Note in Unity, the bones in the fingers are setup with a parent-child relationship. This means for example that rotating a finger at the metacarpalphalangeal joint moves the proximate phalangeal joint
+<li>
+<ol>  
 Set the location, orientation and scale parameters for each joint for each reference pose you wish to include in the calibration sequence.
 Record the parameters to use to drive the hand animation during the Calibration process and program each reference pose into the CalibrationAlgorithm component of the project.
+<ol>
+
 
 DemoRun
 
