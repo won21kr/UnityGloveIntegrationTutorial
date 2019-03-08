@@ -2,7 +2,11 @@
 
 StretchSense Glove Setup Tutorial using Unity as a Case Study
 
-This tutorial takes you through the steps of integrating a StretchSense BLE Demonstration Glove hardware into Unity and using it to animate a hand avatar that copies the gloved hand. While we use Unity in this tutorial, integrating a StretchSense BLE Demonstration Glove into your animation or mocap software environment follows the same fundamental steps no matter what platform you use. We will continue to develop and roll out support for specific platforms, but for those who cannot wait and want to take matters into their own hands and get started straight away, this tutorial will serve as a guide to what is required.  
+This tutorial takes you through the steps of integrating StretchSense BLE Demonstration Glove hardware into Unity and using it to animate a hand avatar that copies the gloved hand. 
+
+While we use Unity in this tutorial, integrating a StretchSense BLE Demonstration Glove into your animation or mocap software environment follows the same fundamental steps no matter what platform you use.
+
+We will continue to develop and roll out support for specific platforms, but for those who cannot wait and want to take matters into their own hands and get started straight away, this tutorial will serve as a guide to what is required.  
 
 This tutorial focuses on creating a basic Unity glove application which can connect to a StretchSense Demonstration Glove via BLE, communicate with the glove, calibrate the raw sensor data and convert it to inverse kinematic (IK) data, and using this IK data to animate a hand avatar.
 
@@ -81,3 +85,6 @@ In this video we will show how assets coordinates are used while calibration. An
 <li>Now lets tell the system to look for Index sensor for matching index movement and perform calculation on the same:SetIndexToIndex</li>
 <li>Finally lets try to run this update demo. As you can see the accuracy improves as compared to system looking for all the sensor data for just single Index finger.IndexToLookAtIndex</li>
 </ol>
+
+<p><img src="SmartGloveDemoFlow.png" alt="Smart Glove Demo Flow" /></p>
+
